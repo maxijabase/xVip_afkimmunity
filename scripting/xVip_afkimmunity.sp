@@ -3,7 +3,7 @@
 
 #include <sourcemod>
 #include <xVip>
-#include <afk_manager>
+#include <afkmanager>
 
 #define PLUGIN_VERSION "1.0"
 
@@ -16,13 +16,7 @@ public Plugin myinfo =
   url = "https://github.com/maxijabase"
 };
 
-public Action AFKM_OnAFKEvent(const char[] name, int client)
+public Action AFKM_OnInitializePlayer(int client)
 {
-  // Check if the client is valid and is a VIP
-  if (IsValidClient(client))
-  {
-    return Plugin_Continue;
-  }
-
   return xVip_IsVip(client) ? Plugin_Stop : Plugin_Continue;
 } 
