@@ -4,6 +4,6 @@ A SourceMod plugin that provides AFK Manager's AFK immunity features for xVip's 
 
 ## Requirements
 
-- SourceMod 1.11 or higher
+- SourceMod 1.12 or higher
 - [xVip](https://github.com/maxijabase/xVip) plugin
 -[AFK Manager](https://github.com/maxijabase/TF2-AFK-Manager) (specifically this fork)
